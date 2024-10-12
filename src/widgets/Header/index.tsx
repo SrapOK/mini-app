@@ -1,28 +1,41 @@
-import { Section, Cell, Image } from "@telegram-apps/telegram-ui";
+import { Cell, Button, Text } from "@telegram-apps/telegram-ui";
 
 import { Logo } from "@/components/Logo";
 import { Link } from "@/components/Link/Link.tsx";
 
 import tonSvg from "./ton.svg";
+import brandSvg from "./brand.svg";
 
 export const Header = () => {
   return (
-    <Section
-      header="Features"
-      footer="You can use these pages to learn more about features, provided by Telegram Mini Apps and other useful projects"
-    >
-      <Cell>
-        <Logo />
-      </Cell>
-      <Link to="/ton-connect">
-        <Cell
-          before={<Image src={tonSvg} style={{ backgroundColor: "#007AFF" }} />}
-          subtitle="Connect your TON wallet"
-          multiline={false}
-        >
-          TON Connect
-        </Cell>
-      </Link>
-    </Section>
+    <Cell
+      className="uppercase p-5"
+      before={
+        <div className="flex flex-row p-[5px] gap-[0.6rem]">
+          <Logo />
+          <img src={brandSvg} alt="brand" />
+        </div>
+      }
+      after={
+        <Link to="/ton-connect">
+          <Button
+            className=" bg-[#007aff] py-4 px-[1.2rem]"
+            before={
+              <img
+                width={18}
+                height={16}
+                src={tonSvg}
+                className=" bg-transparent border-none "
+                alt="ton"
+              />
+            }
+          >
+            <Text caps={true} weight="1" className=" text-[0.7rem]">
+              Connect wallet
+            </Text>
+          </Button>
+        </Link>
+      }
+    />
   );
 };
