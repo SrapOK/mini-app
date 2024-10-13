@@ -11,6 +11,8 @@ interface FooterItemProps {
 export const FooterItem: FC<FooterItemProps> = ({ icon, title, ...props }) => {
   const { id, setId } = useContext(FooterContext);
 
+  console.log(id, props.id);
+
   let isActive = false;
 
   if (id == props.id) isActive = true;

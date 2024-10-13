@@ -13,7 +13,7 @@ interface footerContext {
 }
 export const FooterContext = createContext<footerContext>({
   id: 0,
-  setId: () => 0,
+  setId: () => null,
 });
 
 export const Footer = () => {

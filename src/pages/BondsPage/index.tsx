@@ -12,6 +12,7 @@ export const BondsPage = () => {
       <Header />
       <CardBonds />
       <Cell
+        className=" mt-4"
         before={
           <Text weight="1" caps={true}>
             Bonds
