@@ -6,8 +6,6 @@ body {
     position: absolute;
     width: 335px;
     height: 184px;
-    top: 101px;
-    left: 20px;
     gap: 0px;
     border-radius: 30px;
     opacity: 0px;
@@ -95,6 +93,8 @@ body {
 }
 
 .BottomButton {
+    display: flex;
+    flex-direction: row;
     width: 88px !important;
     height: 23px !important;
     border-radius: 50px;
