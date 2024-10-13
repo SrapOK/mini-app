@@ -9,7 +9,7 @@ export interface AchievementProps {
 
 export const Achievement: FC<AchievementProps> = ({ title, reward }) => {
   return (
-    <div className=" rounded-[10px] h-[61px] max-w-[400px] px-[15px] py-[13px] flex justify-between bg-[#282F43] border border-[#387AFF]">
+    <div className=" mx-auto  rounded-[10px] h-[61px] w-[335px] sm:w-[400px] md:w-[500px]  px-[15px] py-[13px] flex justify-between bg-[#282F43] border border-[#387AFF]">
       <div className="flex justify-between gap-3">
         <div className="flex justify-center align-middle">
           <img src={tonIcon} />
