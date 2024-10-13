@@ -7,6 +7,7 @@ import { Header } from "@/widgets/Header";
 
 import { Button, Cell, Text } from "@telegram-apps/telegram-ui";
 
+
 export const BondsPage = () => {
   return (
     <Page back={false}>
