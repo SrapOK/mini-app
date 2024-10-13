@@ -35,7 +35,7 @@ body {
 
 .ProjectInfo {
   display: flex;
-  top: -15px;
+  top: -30px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -65,6 +65,7 @@ body {
 }
 
 .TimerInfo {
+  top: -30px;
   position: relative;
   display: flex;
   justify-content: center;

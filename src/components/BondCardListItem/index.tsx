@@ -22,13 +22,13 @@ export const BondCardListItem: FC<BondCardProps> = ({
   collected,
 }) => {
   return (
-    <div className="border border-[#387AFF] w-[335px] h-[84px]  px-[15px] py-[10px] uppercase font-bold text-[8px] rounded-[15px] bg-[#282F43]">
+    <div className="border border-[#387AFF] w-[335px] h-[84px] mt-5 px-[15px] py-[10px] uppercase font-bold text-[8px]  rounded-[15px] bg-[#282F43]">
       <div className="flex flex-col justify-between h-full">
         <div className="flex justify-between">
           <div className="flex align-super">
             <div>{name}</div>
             <div className="  border-l border-r flex gap-1 px-2 mx-2">
-              {rating}{" "}
+              {rating}
               <img
                 src={star}
                 width={11}
