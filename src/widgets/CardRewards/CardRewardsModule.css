@@ -69,7 +69,7 @@ body {
 
 .ProgressBar {
     display: flex;
-    width: 285px !important;
+    /* width: 285px !important; */
     height: 13px !important;
     gap: 0px;
     border-radius: 100px !important;
@@ -93,8 +93,6 @@ body {
 }
 
 .BottomButton {
-    display: flex;
-    flex-direction: row;
     width: 88px !important;
     height: 23px !important;
     border-radius: 50px;
@@ -104,7 +102,7 @@ body {
     font-weight: 700 !important;
     line-height: 14px !important;
     letter-spacing: 0.03em !important;
-    text-align: left;
+    text-align: center;
 
 }
 

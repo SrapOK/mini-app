@@ -5,7 +5,7 @@ import "./CardStakeTotalModule.css";
 export const CardStakeTotal = () => {
   return (
         <Card 
-            className="Card flex flex-col h-full justify-between p-4"
+            className="Card flex flex-col h-full w-full justify-between p-4 mt-5"
             style={{
                 height: 87
             }}

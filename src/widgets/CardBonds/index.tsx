@@ -5,7 +5,7 @@ import "./CardBondsModule.css";
 
 export const CardBonds = () => {
   return (
-    <div className="flex justify-center align-middle">
+    <div className="flex justify-center align-middle ">
       <Card
         style={{
           /* Group 2118 */

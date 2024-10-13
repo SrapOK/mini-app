@@ -15,7 +15,6 @@ export const StakePage = () => {
           <div className="border-t border-gray-800 mx-5 flex flex-col justify-center">
             <CardStakeTotal />
             <Button
-              // mode="filled"
               size="l"
               className="my-5"
               style={{

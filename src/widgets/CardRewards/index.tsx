@@ -1,11 +1,11 @@
-import { Card, Progress, Button } from "@telegram-apps/telegram-ui";
+import { Card, Progress } from "@telegram-apps/telegram-ui";
 
 import "./CardRewardsModule.css";
 
 export const CardRewards = () => {
   return (
     <div className="flex justify-center flex-row border-t border-gray-800 mx-5 pt-5">
-        <Card className="Card">
+        <Card className="Card w-full">
             <div className="Content">
                 <div className="Top">
                     <div className="logo">
@@ -33,7 +33,7 @@ export const CardRewards = () => {
                     </div>
                 </div>
                 <div className="ProgressInfo">
-                    <Progress className="ProgressBar" value={10} />
+                    <Progress className="ProgressBar w-full" value={10} />
                     <div className="RangInfo">
                         <div><span style={{ fontWeight: 700 }}>RANG: </span>
                         <span>GOLD TIER</span></div>
@@ -43,13 +43,13 @@ export const CardRewards = () => {
                 </div>
                 <div className="Bottom">
                     <span className="BottomText">16% COLLECTED IN TON YEARLY</span>
-                    <Button
+                    <button
                         // mode="filled"
-                        size="s"
+                        // size="s"
                         className="BottomButton"
                     >
                         STAKE
-                    </Button>
+                    </button>
                 </div>
             </div>
             
