@@ -1,4 +1,4 @@
-import { BondCardProps } from "@/components/BondCard";
+import { BondCardProps } from "@/components/BondCardListItem";
 
 export const data: BondCardProps[] = [
   {

@@ -1,13 +1,16 @@
 import { Page } from "@/components/Page";
 import { BondCardList } from "@/widgets/BondCardList";
+import { CardBonds } from "@/widgets/CardBonds";
 import { Footer } from "@/widgets/Footer";
 import { Header } from "@/widgets/Header";
-import { Button, Cell, List, Text } from "@telegram-apps/telegram-ui";
+
+import { Button, Cell, Text } from "@telegram-apps/telegram-ui";
 
 export const BondsPage = () => {
   return (
     <Page back={false}>
       <Header />
+      <CardBonds />
       <Cell
         before={
           <Text weight="1" caps={true}>

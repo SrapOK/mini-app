@@ -1,4 +1,4 @@
-import { BondCard } from "@/components/BondCard";
+import { BondCard } from "@/components/BondCardListItem";
 import { data } from "./data";
 import { List } from "@telegram-apps/telegram-ui";
 
