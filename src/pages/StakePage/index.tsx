@@ -5,6 +5,8 @@ import { Header } from "@/widgets/Header";
 import { List, Text, Button } from "@telegram-apps/telegram-ui";
 
 import { CardStakeTotal } from "@/widgets/CardStakeTotal";
+import { CardStakeInput } from "@/widgets/CardStakeInput";
+import { CardStakeDrop } from "@/widgets/CardStakeDrop";
 
 export const StakePage = () => {
   return (
@@ -13,6 +15,8 @@ export const StakePage = () => {
       <List>
         <Header />
           <div className="border-t border-gray-800 mx-5 flex flex-col justify-center">
+            <CardStakeDrop />
+            <CardStakeInput />
             <CardStakeTotal />
             <Button
               size="l"
