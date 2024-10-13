@@ -4,7 +4,7 @@ import { Header } from "@/widgets/Header";
 
 import { List, Text } from "@telegram-apps/telegram-ui";
 import { CardRewards } from "@/widgets/CardRewards";
-import { Achievement } from "@/components/Achievement";
+import { AchievementList } from "@/widgets/AchievementList";
 
 export const RewardsPage = () => {
   return (
@@ -39,7 +39,7 @@ export const RewardsPage = () => {
             Tasks for increase your np
           </Text>
         </div>
-        <Achievement />
+        <AchievementList />
         <Footer />
       </List>
     </Page>
