@@ -21,7 +21,7 @@ export const StakePage = () => {
                 background: "#2BA8FA",
               }}
             >
-              STAKE
+              CONNECT WALLET TO STAKE
             </Button>
             <div className="flex flex-col">
                 <div className="flex flex-row justify-between mb-4">
