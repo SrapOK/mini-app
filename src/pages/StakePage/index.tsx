@@ -15,6 +15,7 @@ export const StakePage = () => {
       <List>
         <Header />
           <div className="border-t border-gray-800 mx-5 flex flex-col justify-center">
+
             <CardStakeDrop />
             <CardStakeInput />
             <CardStakeTotal />
