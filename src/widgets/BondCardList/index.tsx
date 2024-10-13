@@ -5,7 +5,7 @@ import { List } from "@telegram-apps/telegram-ui";
 export const BondCardList = () => {
   return (
     <div className="flex justify-center">
-      <List className=" mx-[20px]">
+      <List className=" mx-[20px] mb-[6.2rem]">
         {data.map((v, i) => (
           <BondCardListItem
             key={i}

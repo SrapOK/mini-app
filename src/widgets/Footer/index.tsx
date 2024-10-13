@@ -11,6 +11,7 @@ interface footerContext {
   id: number;
   setId: Dispatch<SetStateAction<number>>;
 }
+
 export const FooterContext = createContext<footerContext>({
   id: 0,
   setId: () => null,
@@ -20,9 +21,9 @@ export const Footer = () => {
   const [id, setId] = useState(0);
 
   return (
-    <div className=" z-50 fixed bottom-[20px] left-1/2 w-full -translate-x-1/2 px-5">
-      <div className="flex justify-evenly rounded-[10px] backdrop-blur-[20px] bg-[#1D1D1DB2] border border-solid border-[#387AFF80] ">
-        <FooterContext.Provider value={{ id, setId }}>
+    <FooterContext.Provider value={{ id, setId }}>
+      <div className=" z-50 fixed bottom-[20px] left-1/2 w-full -translate-x-1/2 px-5">
+        <div className="flex justify-evenly rounded-[10px] backdrop-blur-[20px] bg-[#1D1D1DB2] border border-solid border-[#387AFF80] ">
           <Link to={"/bonds"}>
             <FooterItem
               id={0}
@@ -65,8 +66,8 @@ export const Footer = () => {
               title={"rewards"}
             />
           </Link>
-        </FooterContext.Provider>
+        </div>
       </div>
-    </div>
+    </FooterContext.Provider>
   );
 };
