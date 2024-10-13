@@ -1,4 +1,5 @@
 import { Page } from "@/components/Page";
+import { TagList } from "@/components/TagList";
 import { BondCardList } from "@/widgets/BondCardList";
 import { CardBonds } from "@/widgets/CardBonds";
 import { Footer } from "@/widgets/Footer";
@@ -35,6 +36,7 @@ export const BondsPage = () => {
           </Button>
         }
       />
+      <TagList />
       <BondCardList />
       <Footer />
     </Page>
